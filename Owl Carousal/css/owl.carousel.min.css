@@ -24,7 +24,7 @@
     position:relative;
     overflow:hidden;
     -webkit-transform:translate3d(0,0,0) ;
-    max-height: 40vh;
+    max-height: 24vh;
 }
 .owl-carousel .owl-item,.owl-carousel .owl-wrapper{
     -webkit-backface-visibility:hidden;
@@ -38,7 +38,7 @@
     .owl-carousel .owl-item img{
     display: block;
     min-height: 180px;
-    max-width: 235px;
+  
     
     }
     .owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}
@@ -50,6 +50,15 @@
         -moz-user-select:none;
         -ms-user-select:none;
         user-select:none
+    }
+    .owl-carousel .owl-nav button.owl-next{
+        position: absolute;
+        right: 1%;
+
+    }
+    .owl-carousel .owl-nav button.owl-prev{
+        position: absolute;
+        left: 1%;
     }
     .owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot{
         background:white;
@@ -74,7 +83,9 @@
         -webkit-user-select:none;
         -moz-user-select:none;
         -ms-user-select:none;
-        user-select:none
+        user-select:none;
+        height: 24vh;
+
     }
     .owl-carousel.owl-grab{
         cursor:move;cursor:grab
