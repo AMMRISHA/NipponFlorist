@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="navbar-categories">
+    <div class="burger-5">
+          <div class="line-5"></div>
+          <div class="line-5"></div>
+          <div class="line-5"></div>
+       </div>
+    
+   <div class="categories" style="background-color: rgb(220,68,123);">
+   
+    <div class="dropdown">
+      <button class="dropbtn">ALL CATEGORIES
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+       
+        <div class="row" style="background-color: white;">
+          <div class="column" style="background-color: white;">
+            <a href="#">Roses</a>
+            <a href="#">Flowers</a>
+            <a href="#">Plants</a>
+            
+          </div>
+          <div class="column">
+            <a href="#">Fresh Fruits</a>
+            <a href="#"> Cakes</a>
+            <a href="#">Wines</a>
+          </div>
+          <div class="column">
+            <a href="#">Gift Baskets</a>
+            <a href="#">Chocolates</a>
+            <a href="#">Corporate Gifts</a>
+            
+          </div>
+         <div class="column">
+          <a href="#">Same Day Delivery</a>
+         </div>
+         
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">ALL OCCASIONS
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+       
+        <div class="row">
+          <div class="column">
+            <a href="#">Anniversary</a>
+            <a href="#">Birthday</a>
+            <a href="#">Valentine's Day</a>
+            
+          </div>
+          <div class="column">
+            <a href="#">Congratulation</a>
+            <a href="#">Condolance</a>
+            <a href="#">White Day</a>
+          </div>
+          <div class="column">
+              
+            <a href="#">Wedding</a>
+            <a href="#">Women's Day</a>
+            <a href="#">Father's Day</a> 
+          </div>
+
+          <div class="column">
+            <a href="#">Mother's Day</a>
+            <a href="#">New Year</a>
+           <a href="#">Thank You</a>
+          </div>
+          <div class="column">
+            <a href="#">Get Well Soon</a>
+            <a href="#">I'm Sorry</a>
+            <a href="#">Christmas Gifts</a>
+            
+           </div>
+        </div>
+      </div>
+    </div>
+   
+    <a href="#" class="active">SAME DAY</a>
+    <a href="#">FLOWERS</a>
+    <a href="#">CAKES</a>
+    <a href="#">GIFT BASKETS</a>
+    <a href="#">DELIVERY LOCATIONS</a>
+    <a href="#" style="border: none;">SALE</a>
+  </div>
+</div>
+
+  <script>
+    burger =document.querySelector('.burger-5')
+ul=document.querySelector('.categories')
+
+burger.addEventListener('click',()=>{
+
+ ul.classList.toggle('categories');
+
+})
+  </script>
+</body>
+</html>
