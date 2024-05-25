@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NipponFlorst</title>
+    <link rel="stylesheet" href="Owl Carousal/css/docs.theme.min.css">
+    <link rel="stylesheet" href="Owl Carousal/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="Owl Carousal/css/owl.theme.default.min.css">
     <script src="nippon.js"></script>
+    <script src="Owl Carousal/js/jquery.min.js"></script>
+    <script src="Owl Carousal/js/owl.carousel.js"></script>
+    <script src="Owl Carousal/js/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"  />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -239,7 +245,7 @@
            
          <p>Birthday Flowers | Anniversary Flowers | Condolence/Sympathy Flowers | Flower Delivery</p>
        
-          <div class="owl-carousel owl-theme" >
+          <div id="s-des" class="owl-carousel owl-theme" >
             <div class="item">
               <div class="des-con">
                 <img src="img/birthday.webp" alt="">
@@ -1155,21 +1161,23 @@ ul.classList.toggle('categories');
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="owl carousel/slider.js"></script>
 <script>
- $('.owl-carousel').owlCarousel({
- loop:true,
- margin:10,
- nav:true,
- responsive:{
-     0:{
-         items:2
-     },
-     600:{
-         items:3
-     },
-     1000:{
-         items:4
-     }
- }
+ var sdes = $('#s-des');
+ sdes.owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
 })
 </script>
 <script>
